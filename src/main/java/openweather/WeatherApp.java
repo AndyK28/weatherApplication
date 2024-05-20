@@ -16,7 +16,6 @@ public class WeatherApp {
         String cityName = "Johannesburg";
 
         try {
-            // URL url = new URL("http://api.openweathermap.org/data/2.5/weather?id=" + cityId + "&appid=" + apiKey);
             URL url = new URL("http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apiKey);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
